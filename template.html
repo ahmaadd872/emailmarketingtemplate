@@ -1,0 +1,511 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Template2</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <style>
+        body,
+        h1,
+        h2,
+        h3,
+        p {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: lightgray;
+        }
+
+        /* Container for the template */
+        .template {
+            margin: 7% 17%;
+            border: 1px;
+
+            background-color: white;
+            padding: 20px;
+            border-radius: 20px;
+            /* Round corners */
+            overflow: hidden;
+            /* Ensure content doesn't overflow the rounded corners */
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+            /* Add shadow */
+        }
+
+        /* Navigation */
+        .nav {
+            background-color: white;
+            color: black;
+            /* Adjust text color */
+            padding: 10px 20px;
+            border-radius: 20px;
+            /* Round corners */
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            /* Add shadow */
+        }
+
+        .brand {
+            width: 50%;
+            padding: 10px;
+        }
+
+        .brand a {
+            color: black;
+            text-decoration: none;
+            font-size: 18px;
+        }
+
+        .site {
+            background-color: rgba(37, 230, 185, 0.7);
+            /* Semi-transparent green background */
+            width: 50%;
+            padding: 10px;
+            text-align: center;
+            display: flex;
+            justify-content: flex-start;
+            /* Align content to the left */
+            align-items: center;
+            /* Center vertically */
+            border-radius: 20px;
+            /* Round corners */
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            /* Add shadow */
+        }
+
+        .site a {
+            color: black;
+            text-decoration: none;
+            font-size: 18px;
+            margin-left: 10px;
+            /* Add some space between the content and the left edge */
+        }
+
+
+        /* Main section */
+        #main {
+            margin-top: 2%;
+            border-radius: 20px;
+            /* Round corners */
+            overflow: hidden;
+            /* Ensure background doesn't overflow the rounded corners */
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+            /* Add shadow */
+        }
+
+        .mainimg {
+            height: 400px;
+            /* Adjust the height as needed */
+            width: 100%;
+            background-image: url('https://img.freepik.com/free-photo/business-meeting-black-white_1098-14.jpg');
+            background-size: cover;
+            background-position: center;
+            position: relative;
+            border-radius: 20px;
+            /* Round corners */
+        }
+
+        .main-text {
+            position: absolute;
+            bottom: 20px;
+            /* Move to bottom */
+            left: 20px;
+            /* Move to left */
+            background-color: rgba(37, 230, 185, 0.465);
+            color: white;
+            padding: 30px;
+            /* Increase padding for a bigger size */
+            font-size: 40px;
+            /* Increase font size */
+            text-align: left;
+            /* Align text to the left */
+            transition: transform 0.3s ease;
+            /* Add transition effect */
+            border-radius: 20px;
+            /* Round corners */
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+            /* Add shadow */
+        }
+
+
+
+        /* Service section */
+
+        #service {
+            background-color: white;
+            padding-top: 12%;
+            overflow: hidden;
+        }
+
+        .service-text {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .creative {
+            width: 100%;
+            margin-bottom: 30px;
+            padding: 20px;
+            background-color: #fff;
+            /* Change background color to white */
+            border-radius: 10px;
+            transition: transform 0.3s ease;
+            /* Add transition effect for smooth zoom */
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+            /* Add shadow around all sides, adjust values as needed */
+        }
+
+        .creative:hover {
+            transform: scale(1.05);
+            /* Zoom effect on hover */
+        }
+
+        .creative h3 {
+            margin-top: 20px;
+        }
+
+        .creative p {
+            color: #666;
+        }
+
+        .lower-section {
+            background-color: rgba(59, 59, 246, 0.688);
+            height: 20%;
+            width: 20%;
+
+        }
+
+
+        /* Why choose us section */
+        .whychooseus {
+            background-color: #f9f9f9;
+            padding: 50px 20px;
+            border-radius: 10px;
+        }
+
+        .contact {
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        /* Add spacing between sections */
+        #main,
+        #service,
+        .whychooseus {
+            margin-bottom: 50px;
+        }
+
+        /* Round the sections */
+        #main,
+        #service,
+        .whychooseus,
+        .creative {
+            border-radius: 20px;
+            /* overflow: scroll; */
+            /* Ensure background doesn't overflow the rounded corners */
+        }
+
+        /* Add shadow to sections */
+        #main,
+        #service,
+        .whychooseus {
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+        }
+
+        .quate {
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+            border-radius: 20px;
+            overflow: hidden;
+            height: 2%;
+            width: 2%;
+            background-color: rgba(37, 230, 185, 0.7);
+            height: 17%;
+            width: 100%;
+            margin-bottom: 10%;
+
+
+        }
+
+        /* fonts */
+        .roboto-thin {
+            font-family: "Roboto", sans-serif;
+            font-weight: 100;
+            font-style: normal;
+        }
+
+        .roboto-light {
+            font-family: "Roboto", sans-serif;
+            font-weight: 300;
+            font-style: normal;
+        }
+
+        .roboto-regular {
+            font-family: "Roboto", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+        }
+
+        .roboto-medium {
+            font-family: "Roboto", sans-serif;
+            font-weight: 500;
+            font-style: normal;
+        }
+
+        .roboto-bold {
+            font-family: "Roboto", sans-serif;
+            font-weight: 700;
+            font-style: normal;
+        }
+
+        .roboto-black {
+            font-family: "Roboto", sans-serif;
+            font-weight: 900;
+            font-style: normal;
+        }
+
+        .roboto-thin-italic {
+            font-family: "Roboto", sans-serif;
+            font-weight: 100;
+            font-style: italic;
+        }
+
+        .roboto-light-italic {
+            font-family: "Roboto", sans-serif;
+            font-weight: 300;
+            font-style: italic;
+        }
+
+        .roboto-regular-italic {
+            font-family: "Roboto", sans-serif;
+            font-weight: 400;
+            font-style: italic;
+        }
+
+        .roboto-medium-italic {
+            font-family: "Roboto", sans-serif;
+            font-weight: 500;
+            font-style: italic;
+        }
+
+        .roboto-bold-italic {
+            font-family: "Roboto", sans-serif;
+            font-weight: 700;
+            font-style: italic;
+        }
+
+        .roboto-black-italic {
+            font-family: "Roboto", sans-serif;
+            font-weight: 900;
+            font-style: italic;
+        }
+
+        /* Service section */
+        #service {
+            background-color: white;
+            padding-top: 12%;
+            overflow: hidden;
+        }
+
+        .service-text {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .creative {
+            width: 100%;
+            margin-bottom: 30px;
+            padding: 20px;
+            background-color: #fff;
+            /* Change background color to white */
+            border-radius: 10px;
+            transition: transform 0.3s ease;
+            /* Add transition effect for smooth zoom */
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+            /* Add shadow around all sides, adjust values as needed */
+        }
+
+        /* Change background color of the i tags */
+        i {
+            background-color: rgba(37, 230, 185, 0.7);
+            /* Change to the desired color */
+            padding: 10px;
+            /* Add padding for better appearance */
+            border-radius: 50%;
+            /* Make it round */
+        }
+
+        /* Increase font size of the i tags */
+        i {
+            font-size: 24px;
+            /* Adjust the font size as needed */
+        }
+
+        .creative:hover {
+            transform: scale(1.05);
+            /* Zoom effect on hover */
+        }
+
+        .creative h3 {
+            margin-top: 20px;
+        }
+
+        .creative p {
+            color: #666;
+        }
+
+        .lower-section {
+            background-color: rgba(59, 59, 246, 0.688);
+            height: 20%;
+            width: 20%;
+        }
+
+        /* Why choose us section */
+        .whychooseus {
+            background-color: #f9f9f9;
+            padding: 50px 20px;
+            border-radius: 10px;
+        }
+
+        .contact {
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        /* Responsive adjustments */
+        @media only screen and (max-width: 768px) {
+            .template {
+                margin: 0px;
+            }
+
+
+        }
+    </style>
+</head>
+
+<body class="roboto-regular">
+
+    <div class="template">
+
+        <!-- <nav class="navbar bg-body-tertiary">
+        <div class="container text-center">
+            <div class="row align-items-center">
+                <div class="col">
+                   
+                </div>
+                <div class="col">
+                    
+                </div>
+            </div>
+        </div>
+
+    </nav> -->
+        <div class="nav container">
+            <div class="brand">
+                <a class="navbar-brand " href="https://backtoai.com/">
+                    <img class="logo" src="https://backtoai.com/assets/img/logo.png" alt="backtoai logo" style="max-width: 80px; height: auto;">
+
+                </a>
+            </div>
+            <div class="site">
+                <div><a class="col roboto-regular" href="https://backtoai.com/">
+                        www.backtoai.com
+                    </a></div>
+            </div>
+        </div>
+
+
+
+        <section id="main">
+            <!--main Section-->
+            <div class="mainimg">
+                <h1 class="main-text roboto-bold">Take Your Business To The Next Level</h1>
+            </div>
+
+
+
+        </section>
+        <!--Service-->
+        <div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 col-md-6 col-sm-12">
+                        <section id="service">
+                            <h2 class="service-text roboto-medium">OUR SERVICE!</h2>
+                            <div class="creative">
+                                <i class="far fa-lightbulb"></i>
+                                <h3 class="roboto-bold">Creative Business Idea</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam asperiores facilis nulla. Ducimus ab inventore nam aperiam reprehenderit voluptatibus, ipsum eius impedit, iusto sit eligendi? Nemo enim ipsum dolores. Quia.</p>
+                            </div>
+                            <div class="creative">
+                                <i class="far fa-paper-plane"></i>
+                                <h3 class="roboto-bold">Creative Business concept</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Omnis odit tempore ex dolorum commodi alias quibusdam minima placeat, totam quasi animi ipsum nobis nemo ipsa officia porro minus laboriosam veritatis.</p>
+                            </div>
+                            <div class="creative">
+                                <i class="fas fa-chart-column"></i>
+                                <h3 class="roboto-bold">Creative Marketing Strategy</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium fugiat sed soluta, cumque aspernatur temporibus porro, totam eaque illum quos voluptate quod repudiandae ab inventore impedit, assumenda nihil voluptatibus repellat.</p>
+                            </div>
+                        </section>
+                        <div class="quate"></div>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-12">
+                        <div class="quate"></div>
+                        <section class="whychooseus">
+                            <div class="upper-section"></div>
+                            <h2 class="roboto-bold">WHY CHOOSE US?</h2>
+                            <p class="roboto-regular">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quos, temporibus, delectus qui iusto unde nemo a consectetur sit nulla quasi at cum accusantium, quidem repellat vero cumque dicta pariatur ut?</p>
+                            <i class="far fa-check-square"></i>
+                            <p class="roboto-regular">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint voluptates soluta, officiis eius est ipsum nostrum possimus placeat in. Minima sit ipsa soluta. Ad quisquam dolor et necessitatibus voluptatem odit?</p>
+                            <i class="far fa-check-square"></i>
+                            <p class="roboto-regular">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptates optio fugit consequatur minus itaque tempore, facilis quos atque voluptas culpa nihil quia veniam necessitatibus laboriosam eos laborum quas dolorem ipsum.</p>
+                            <i class="far fa-check-square"></i>
+                            <p class="roboto-regular">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aperiam, amet, consequuntur facere possimus voluptate, repellendus explicabo assumenda adipisci architecto ab ea. Debitis corrupti qui mollitia tempore sit ut. Tenetur, itaque?</p>
+                            <!-- contact us -->
+                            <div class="contact">
+                                <h2 class="roboto-bold">CONTACT US</h2>
+                                <div class="row">
+                                    <div class="col-sm-12">
+                                        <p class="roboto-regular">Phone No</p>
+                                    </div>
+                                    <div class="col-sm-12">
+                                        <p class="roboto-regular">Email</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+            </div>
+        
+
+            <!--End our services-->
+
+            <!--why choose us-->
+        </div>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/d1908327c0.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
